@@ -1,7 +1,7 @@
 import Autenticacao, {
 	CancelarMonitoramento,
 	MonitorarUsuario,
-} from "@/logic/firebase/auth/Autenticacao";
+} from "@/logic/firebase/auth/Auth";
 import Colecao from "@/logic/firebase/db/Colecao";
 import Usuario from "./User";
 export default class ServicosUsuario {
