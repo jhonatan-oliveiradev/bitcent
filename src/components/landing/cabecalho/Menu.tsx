@@ -3,6 +3,10 @@ import { useContext } from "react";
 import MenuItem from "./MenuItem";
 
 export default function Menu() {
+	function loginGoogle() {
+		console.log("logou");
+	}
+
 	return (
 		<div className="flex gap-2">
 			<MenuItem url="#inicio" className="hidden sm:flex">
@@ -14,7 +18,10 @@ export default function Menu() {
 			<MenuItem url="#depoimentos" className="hidden sm:flex">
 				Depoimentos
 			</MenuItem>
-			<MenuItem className="bg-gradient-to-r from-indigo-600 to-cyan-600">
+			<MenuItem
+				onClick={loginGoogle}
+				className="bg-gradient-to-r from-indigo-600 to-cyan-600"
+			>
 				<div className="flex items-center gap-2">
 					<IconBrandGoogle size={15} />
 					<span>Login</span>

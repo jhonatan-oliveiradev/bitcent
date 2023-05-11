@@ -4,8 +4,21 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+	width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+	background: #131313;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #f3f3f3;
+}
+
 html {
 	font-family: "Nunito", sans-serif;
 	background-color: #131313;
 	color: #f3f3f3;
+	scroll-behavior: smooth;
 }
