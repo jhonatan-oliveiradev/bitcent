@@ -1,17 +1,11 @@
-// import AutenticacaoContext from "@/data/contexts/AutenticacaoContext";
-import falseUser from "@/data/constants/falseUser";
+import AutenticacaoContext from "@/data/contexts/AutenticacaoContext";
 import { Avatar, Menu } from "@mantine/core";
 import { IconArrowsRightLeft, IconLogout, IconUser } from "@tabler/icons-react";
 import Link from "next/link";
 import { useContext } from "react";
 
 export default function MenuUsuario() {
-	// const { usuario, logout } = useContext(AutenticacaoContext);
-	const usuario = falseUser;
-
-	function logout() {
-		console.log("logout");
-	}
+	const { usuario, logout } = useContext(AutenticacaoContext);
 
 	return (
 		<Menu>
@@ -44,7 +38,7 @@ export default function MenuUsuario() {
 					<Menu.Item icon={<IconUser size={14} />}>Meus Dados</Menu.Item>
 				</Link>
 				<Menu.Divider />
-				<Menu.Item color="red" icon={<IconLogout size={14} onClick={logout} />}>
+				<Menu.Item color="red" icon={<IconLogout size={14} />} onClick={logout}>
 					Sair do Sistema
 				</Menu.Item>
 			</Menu.Dropdown>
