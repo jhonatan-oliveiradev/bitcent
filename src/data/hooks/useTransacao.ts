@@ -1,14 +1,13 @@
 import servicos from "@/logic/core";
 import Transacao from "@/logic/core/financas/Transacao";
 import { useCallback, useContext, useEffect, useState } from "react";
-import falseUser from "../constants/falseUser";
-// import AutenticacaoContext from "../contexts/AutenticacaoContext";
+
+import AutenticacaoContext from "../contexts/AutenticacaoContext";
 
 export type TipoExibicao = "lista" | "grade";
 
 export default function useTransacao() {
-	// const { usuario } = useContext(AutenticacaoContext);
-	const usuario = falseUser;
+	const { usuario } = useContext(AutenticacaoContext);
 	const [data, setData] = useState<Date>(new Date());
 	const [tipoExibicao, setTipoExibicao] = useState<TipoExibicao>("lista");
 	const [transacoes, setTransacoes] = useState<Transacao[]>([]);

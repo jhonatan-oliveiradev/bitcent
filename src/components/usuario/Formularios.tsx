@@ -1,12 +1,13 @@
+import AutenticacaoContext from "@/data/contexts/AutenticacaoContext";
 import useFormulario from "@/data/hooks/useFormulario";
-import MiniFormulario from "../template/MiniFormulario";
 import Usuario from "@/logic/core/user/User";
-import { TextInput } from "@mantine/core";
-import Texto from "@/logic/utils/Texto";
 import Cpf from "@/logic/utils/Cpf";
 import Telefone from "@/logic/utils/Telefone";
+import Texto from "@/logic/utils/Texto";
+import { TextInput } from "@mantine/core";
 import { useContext, useEffect } from "react";
-import AutenticacaoContext from "@/data/contexts/AutenticacaoContext";
+
+import MiniFormulario from "../template/MiniFormulario";
 
 export default function Formularios() {
 	const { usuario, atualizarUsuario } = useContext(AutenticacaoContext);

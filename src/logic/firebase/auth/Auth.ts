@@ -8,6 +8,7 @@ import {
 	signOut,
 	User,
 } from "firebase/auth";
+
 import { app } from "../config/app";
 
 export type MonitorarUsuario = (usuario: Usuario | null) => void;

@@ -1,22 +1,7 @@
-import {
-	collection,
-	deleteDoc,
-	doc,
-	DocumentData,
-	DocumentSnapshot,
-	getDoc,
-	getDocs,
-	getFirestore,
-	orderBy,
-	OrderByDirection,
-	query,
-	QueryConstraint,
-	setDoc,
-	WhereFilterOp,
-	where,
-} from "firebase/firestore";
-import { app } from "../config/app";
 import Id from "@/logic/core/common/Id";
+import { collection, deleteDoc, doc, DocumentData, DocumentSnapshot, getDoc, getDocs, getFirestore, orderBy, OrderByDirection, query, QueryConstraint, setDoc, where, WhereFilterOp } from "firebase/firestore";
+
+import { app } from "../config/app";
 
 export interface Filtro {
 	atributo: string;
