@@ -1,4 +1,4 @@
-import { initializeApp, FirebaseApp } from "firebase/app";
+import { FirebaseApp, initializeApp } from "firebase/app";
 
 const app: FirebaseApp = initializeApp({
 	apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
