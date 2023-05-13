@@ -12,5 +12,7 @@ export default function BoasVindas() {
 		);
 	}
 
-	return <div className={`text-3xl font-black`}>Olá {renderizarNome()} 👋</div>;
+	return (
+		<div className={`text-3xl font-black`}>Olá, {renderizarNome()} 👋</div>
+	);
 }
